@@ -45,13 +45,21 @@ class LivePhotoController {
 
     this.commentEl.innerText = commentText;
 
-    this.showImg();
+    if (this.canPlayVideo()) {
+      this.playVideo();
+    } else {
+      this.showImg();
+    }
+  }
+
+  canPlayVideo() {
+    return this.videoElEnabled && !this.videoElPlaying;
   }
 
   playVideo() {
     // don't play video if there is none, or if video is already
     // playing.
-    if (!this.videoElEnabled || this.videoElPlaying) {
+    if (!this.canPlayVideo()) {
       return;
     }
 
