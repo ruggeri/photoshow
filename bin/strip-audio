@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+if ARGV.empty?
+  puts "WHERE ARE THE INPUT FILE NAMES??"
+  exit 1
+end
+
+def compute_output_fname(input_fname)
+  re = /^(.*)\.(.{3})$/
+  re_result = re.match(input_fname)
+
+  unless re_result
+    puts "Couldn't parse input fname: #{input_fname}"
+    exit 1
+  end
+
+  input_parsed_fname = re_result[1]
+  input_parsed_ext = re_result[2]
+  output_fname = "#{input_parsed_fname}-noaudio.#{input_parsed_ext}"
+
+  output_fname
+end
+
+command_argument_pairs = ARGV.map do |input_fname|
+  [input_fname, compute_output_fname(input_fname)]
+end
+
+command_argument_pairs.each do |(input_fname, output_fname)|
+  command = "ffmpeg -i \"#{input_fname}\" -c copy -an \"#{output_fname}\""
+  `#{command}`
+end

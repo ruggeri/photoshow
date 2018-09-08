@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+
+#photoshow {
+  height: calc(var(--vh, 1vh) * 90);
+  margin: calc(var(--vh, 1vh) * 5) 5vw calc(var(--vh, 1vh) * 5) 5vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#live-photo-img, #live-photo-video {
+  object-fit: contain;
+
+  max-height: calc(var(--vh, 1vh) * 81);
+  max-width: 90vw;
+
+  flex-grow: 0;
+}
+
+#live-photo-comment {
+  text-align: center;
+  height: calc(var(--vh, 1vh) * 9);
+  width: 90vw;
+  background-color: blue;
+
+  margin: 0;
+}

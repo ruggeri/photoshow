@@ -1,0 +1,46 @@
+#!/usr/bin/env ruby
+
+require 'json'
+
+FILES = {}
+
+REGEXP = /^IMG_(.{4}).*\.(.{3})$/
+
+while fname = ARGV.shift
+  match = REGEXP.match(fname)
+  raise fname unless match
+
+  id = Integer(match[1])
+  extension = match[2]
+
+  obj = (FILES[id] ||= {
+           id: id,
+           imgSrc: nil,
+           videoSrcs: [],
+           commentText: "",
+         })
+  if extension == "mov"
+    if fname =~ /264/
+      codec = "avc1.4d4028"
+    else
+      codec = "hevc"
+    end
+
+    obj[:videoSrcs] << {
+      src: fname,
+      codec: codec
+    }
+  elsif extension == "jpg"
+    obj[:imgSrc] = fname
+  else
+    raise fname
+  end
+end
+
+values = FILES.values
+
+values.sort_by! do |value|
+  value[:id]
+end
+
+puts JSON.pretty_generate(values)
