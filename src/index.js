@@ -19,6 +19,8 @@ class LivePhotoController {
   display({ imgSrc, videoSrcs, commentText }) {
     this.imgEl.src = imgSrc;
 
+    this.videoEl.pause();
+
     // Clear out sources.
     while (this.videoEl.firstChild) {
       this.videoEl.removeChild(this.videoEl.firstChild);
@@ -31,6 +33,8 @@ class LivePhotoController {
       sourceEl.type = "video/mp4; codecs=\"" + videoSrc.codec + "\"";
       this.videoEl.appendChild(sourceEl);
     });
+
+    this.videoEl.load();
 
     // Enable video element?
     if (this.videoEl.childNodes.length > 0) {
