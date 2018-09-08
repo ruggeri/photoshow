@@ -2,6 +2,7 @@
 
 * Ruby.
 * FFmpeg with libx264 support.
+* Use npm to install http-server globally.
 
 # Use
 
@@ -11,3 +12,4 @@
 * Third, build the manifest by using `build-photos-manifest`. You'll
   want to do something like `build-photos-manifest *noaudio*.mov
   *jpg`.
+* Fourth, use run-server to serve the files.
