@@ -1,0 +1,9 @@
+#!/bin/sh
+
+PATH="/Users/ruggeri/photoshow/bin:$PATH"
+rm *noaudio*mov
+strip-audio *mov
+hevc-to-264 *noaudio*mov
+build-photos-manifest *noaudio*mov *jpg > data.json
+rm index.html
+ln ../../src/index.html .

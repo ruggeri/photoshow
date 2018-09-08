@@ -13,3 +13,5 @@
   want to do something like `build-photos-manifest *noaudio*.mov
   *jpg`.
 * Fourth, use run-server to serve the files.
+
+Or you can try to run process-directory.
