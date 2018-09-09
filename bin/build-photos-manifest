@@ -2,6 +2,8 @@
 
 require 'json'
 
+prefix = ARGV.shift
+
 FILES = {}
 
 REGEXP = /^IMG_(.{4}).*\.(.{3})$/
@@ -12,6 +14,7 @@ while fname = ARGV.shift
 
   id = Integer(match[1])
   extension = match[2]
+  src = prefix + fname
 
   obj = (FILES[id] ||= {
            id: id,
@@ -27,11 +30,11 @@ while fname = ARGV.shift
     end
 
     obj[:videoSrcs] << {
-      src: fname,
+      src: src,
       codec: codec
     }
   elsif extension == "jpg"
-    obj[:imgSrc] = fname
+    obj[:imgSrc] = src
   elsif extension == "txt"
     obj[:commentText] = File.read(fname)
   else
