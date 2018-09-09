@@ -1,0 +1,108 @@
+[
+  {
+    "id": 2352,
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2352.jpg",
+    "videoSrcs": [
+      {
+        "src": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2352-noaudio.mov",
+        "codec": "hevc"
+      },
+      {
+        "src": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2352-noaudio-264.mov",
+        "codec": "avc1.4d4028"
+      }
+    ],
+    "commentText": "The Blue Lagoon, a famous thermal bath. The water is blue beacuse of the silica content!\n"
+  },
+  {
+    "id": 2355,
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2355.jpg",
+    "videoSrcs": [
+      {
+        "src": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2355-noaudio.mov",
+        "codec": "hevc"
+      },
+      {
+        "src": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2355-noaudio-264.mov",
+        "codec": "avc1.4d4028"
+      }
+    ],
+    "commentText": ""
+  },
+  {
+    "id": 2361,
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2361.jpg",
+    "videoSrcs": [
+      {
+        "src": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2361-noaudio-264.mov",
+        "codec": "avc1.4d4028"
+      },
+      {
+        "src": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2361-noaudio.mov",
+        "codec": "hevc"
+      }
+    ],
+    "commentText": "Apparently the silica is really bad for your hair!\n"
+  },
+  {
+    "id": 2397,
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2397.jpg",
+    "videoSrcs": [
+      {
+        "src": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2397-noaudio.mov",
+        "codec": "hevc"
+      },
+      {
+        "src": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2397-noaudio-264.mov",
+        "codec": "avc1.4d4028"
+      }
+    ],
+    "commentText": "Lagoons are fun.\n"
+  },
+  {
+    "id": 2434,
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2434.jpg",
+    "videoSrcs": [
+      {
+        "src": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2434-noaudio.mov",
+        "codec": "hevc"
+      },
+      {
+        "src": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2434-noaudio-264.mov",
+        "codec": "avc1.4d4028"
+      }
+    ],
+    "commentText": "Awww.\n"
+  },
+  {
+    "id": 2452,
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2452.jpg",
+    "videoSrcs": [
+      {
+        "src": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2452-noaudio.mov",
+        "codec": "hevc"
+      },
+      {
+        "src": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2452-noaudio-264.mov",
+        "codec": "avc1.4d4028"
+      }
+    ],
+    "commentText": "Lagoons are hard work. You should take breaks and eat snacks.\n"
+  },
+  {
+    "id": 2477,
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2477.jpg",
+    "videoSrcs": [
+
+    ],
+    "commentText": "This place is huge!\n"
+  },
+  {
+    "id": 2482,
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/iceland-final/00-blue-lagoon/IMG_2482.jpg",
+    "videoSrcs": [
+
+    ],
+    "commentText": "There's also a sauna inside. I lasted about one minute in there.\n"
+  }
+]
