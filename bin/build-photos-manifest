@@ -8,7 +8,9 @@ FILES = {}
 
 REGEXP = /^IMG_(.{4}).*\.(.{3})$/
 
-while fname = ARGV.shift
+files = Dir.glob("*noaudio*.mov") + Dir.glob("*txt") + Dir.glob("*jpg")
+
+while fname = files.shift
   match = REGEXP.match(fname)
   raise fname unless match
 
