@@ -17,6 +17,10 @@ class LivePhotoController {
   }
 
   display({ imgSrc, videoSrcs, commentText }) {
+    this.commentEl.innerText = commentText;
+    // never show comment text and the *prior* image.
+    this.imgEl.src = "";
+    // this image may take a while to load/render
     this.imgEl.src = imgSrc;
 
     this.pauseVideo();
@@ -42,8 +46,6 @@ class LivePhotoController {
     } else {
       this.videoElEnabled = false;
     }
-
-    this.commentEl.innerText = commentText;
 
     if (this.canPlayVideo()) {
       this.playVideo();
