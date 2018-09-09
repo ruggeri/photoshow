@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: black;
 }
 
 #photoshow {
@@ -25,7 +26,9 @@ body {
   text-align: center;
   height: calc(var(--vh, 1vh) * 9);
   width: 90vw;
-  background-color: blue;
 
   margin: 0;
+
+  color: gray;
+  font-size: 16pt;
 }
