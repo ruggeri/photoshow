@@ -19,7 +19,7 @@ class LivePhotoController {
   display({ imgSrc, videoSrcs, commentText }) {
     this.imgEl.src = imgSrc;
 
-    this.videoEl.pause();
+    this.pauseVideo();
 
     // Clear out sources.
     while (this.videoEl.firstChild) {
@@ -52,6 +52,11 @@ class LivePhotoController {
     }
   }
 
+  pauseVideo() {
+    this.videoEl.pause();
+    this.videoElPlaying = false;
+  }
+
   canPlayVideo() {
     return this.videoElEnabled && !this.videoElPlaying;
   }
@@ -73,9 +78,8 @@ class LivePhotoController {
     this.imgEl.style.display = null;
     this.videoEl.style.display = "none";
 
-    this.videoEl.pause();
+    this.pauseVideo();
     this.videoEl.currentTime = 0;
-    this.videoElPlaying = false;
   }
 }
 
