@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+require 'json'
+
+prefix = ARGV.shift
+
+FILES = {}
+
+REGEXP = /^([[:digit:]]{3})_.*\.(.{3})$/
+
+files = Dir.glob("*txt") + Dir.glob("*jpg")
+
+while fname = files.shift
+  match = REGEXP.match(fname)
+  raise fname unless match
+
+  id = Integer(match[1], 10)
+  extension = match[2]
+  src = prefix + fname
+
+  obj = (FILES[id] ||= {
+           id: id,
+           imgSrc: nil,
+           videoSrcs: [],
+           commentText: "",
+         })
+  if extension == "jpg"
+    obj[:imgSrc] = src
+  elsif extension == "txt"
+    obj[:commentText] = File.read(fname)
+  else
+    raise fname
+  end
+end
+
+values = FILES.values
+
+values.sort_by! do |value|
+  value[:id]
+end
+
+puts JSON.pretty_generate(values)

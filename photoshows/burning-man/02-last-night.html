@@ -1,0 +1,25 @@
+<head>
+  <script src="../../lib/hammer.min.js"></script>
+  <script src="../../src/index.js"></script>
+  <script src="../../src/live-photo-controller.js"></script>
+  <script src="../../src/photoshow-controller.js"></script>
+
+  <link href="../../src/index.css" rel="stylesheet">
+
+  <meta
+    name='viewport'
+    content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+</head>
+
+<body>
+  <div id="photoshow"
+       data-json-url="./02-last-night.json">
+    <img id="live-photo-img">
+    <video id="live-photo-video" muted playsinline preload></video>
+    <p id="live-photo-comment"></p>
+  </div>
+
+  <script>
+    initializePhotoshow();
+  </script>
+</body>
