@@ -1,7 +1,7 @@
 [
   {
     "id": 5,
-    "imgSrc": "../../bm-photoshows/00-setup-arrival-camp/005_ned_reno.jpg",
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/burning-man/00-setup-arrival-camp/005_ned_reno.jpg",
     "videoSrcs": [
 
     ],
@@ -9,7 +9,7 @@
   },
   {
     "id": 10,
-    "imgSrc": "../../bm-photoshows/00-setup-arrival-camp/010_ned_setup.jpg",
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/burning-man/00-setup-arrival-camp/010_ned_setup.jpg",
     "videoSrcs": [
 
     ],
@@ -17,7 +17,7 @@
   },
   {
     "id": 11,
-    "imgSrc": "../../bm-photoshows/00-setup-arrival-camp/011_ned_sweeping.jpg",
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/burning-man/00-setup-arrival-camp/011_ned_sweeping.jpg",
     "videoSrcs": [
 
     ],
@@ -25,7 +25,7 @@
   },
   {
     "id": 20,
-    "imgSrc": "../../bm-photoshows/00-setup-arrival-camp/020_ned_card.jpg",
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/burning-man/00-setup-arrival-camp/020_ned_card.jpg",
     "videoSrcs": [
 
     ],
@@ -33,7 +33,7 @@
   },
   {
     "id": 21,
-    "imgSrc": "../../bm-photoshows/00-setup-arrival-camp/021_ned_card_proud.jpg",
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/burning-man/00-setup-arrival-camp/021_ned_card_proud.jpg",
     "videoSrcs": [
 
     ],
@@ -41,7 +41,7 @@
   },
   {
     "id": 30,
-    "imgSrc": "../../bm-photoshows/00-setup-arrival-camp/030_anastassia_arrival.jpg",
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/burning-man/00-setup-arrival-camp/030_anastassia_arrival.jpg",
     "videoSrcs": [
 
     ],
@@ -49,7 +49,7 @@
   },
   {
     "id": 31,
-    "imgSrc": "../../bm-photoshows/00-setup-arrival-camp/031_anastassia_arrival.jpg",
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/burning-man/00-setup-arrival-camp/031_anastassia_arrival.jpg",
     "videoSrcs": [
 
     ],
@@ -57,7 +57,7 @@
   },
   {
     "id": 40,
-    "imgSrc": "../../bm-photoshows/00-setup-arrival-camp/040_camp_tents.jpg",
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/burning-man/00-setup-arrival-camp/040_camp_tents.jpg",
     "videoSrcs": [
 
     ],
@@ -65,7 +65,7 @@
   },
   {
     "id": 45,
-    "imgSrc": "../../bm-photoshows/00-setup-arrival-camp/045_library_photo.jpg",
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/burning-man/00-setup-arrival-camp/045_library_photo.jpg",
     "videoSrcs": [
 
     ],
@@ -73,7 +73,7 @@
   },
   {
     "id": 47,
-    "imgSrc": "../../bm-photoshows/00-setup-arrival-camp/047_library_interior.jpg",
+    "imgSrc": "https://s3-us-west-2.amazonaws.com/photoshows/burning-man/00-setup-arrival-camp/047_library_interior.jpg",
     "videoSrcs": [
 
     ],
