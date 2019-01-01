@@ -3,6 +3,7 @@
 * Ruby.
 * FFmpeg with libx264 support.
 * Use npm to install http-server globally.
+* ImageMagick installed --with-libheif for conversion from HEIC to jpg.
 
 # Use
 
