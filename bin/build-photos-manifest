@@ -14,7 +14,7 @@ while fname = files.shift
   match = REGEXP.match(fname)
   raise fname unless match
 
-  id = Integer(match[1])
+  id = Integer(match[1], 10)
   extension = match[2]
   src = prefix + fname
 
